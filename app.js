@@ -41,7 +41,35 @@ cargarfilas(fila6, 6);
 cargarfilas(fila7, 7);
 cargarfilas(fila8, 8);
 
-
+for (let i = 0; i < fila0.length; i++) {
+    fila0[i].addEventListener("focusout", () =>{
+        console.log("asd");
+    });
+    fila1[i].addEventListener("focusout", () =>{
+        console.log("asd");
+    });
+    fila2[i].addEventListener("focusout", () =>{
+        console.log("asd");
+    });
+    fila3[i].addEventListener("focusout", () =>{
+        console.log("asd");
+    });
+    fila4[i].addEventListener("focusout", () =>{
+        console.log("asd");
+    });
+    fila5[i].addEventListener("focusout", () =>{
+        console.log("asd");
+    });
+    fila6[i].addEventListener("focusout", () =>{
+        console.log("asd");
+    });
+    fila7[i].addEventListener("focusout", () =>{
+        console.log("asd");
+    });
+    fila8[i].addEventListener("focusout", () =>{
+        console.log("asd");
+    });
+}
 function llenarcaja(row, col, caja = []) {
     col *= 3;
     row *= 3;
