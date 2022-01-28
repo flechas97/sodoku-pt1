@@ -41,9 +41,15 @@ td:hover{
 }
 
 .fondo{
+
     width: 560px;
     height: 560px;
     background-image: url("fondo.png");
     background-size: cover;
 
+}
+.centrar{
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
 }
