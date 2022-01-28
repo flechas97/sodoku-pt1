@@ -7,9 +7,48 @@ body{
     background-color: rgb(228, 228, 228);
 }
 td{
-    background-color: greenyellow;
+    background-color: white;
     transition: 0.5s ease all;
     margin: 15px;
+    border-radius: 5px;
+}
+
+td:hover{
+    background-color: rgb(36, 36, 36);
+    border-radius: 5px;
+    color: white;
+    transform: scale(1.3,1.3);
+}
+
+.fondo{
+    border: 6px solid black;
+    width: auto;
+    height: auto;
+    background-color: rgba(187, 187, 187, 0.411);
+    /* background-image: url("fondo.png");
+    background-size: cover; */
+
+}
+.centrar{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#a00,#a01,#a02,#a03,#a04,#a05,#a06,#a07,#a08{
+    /* border-top: 3px solid black; */
+}
+#a02,#a12,#a22,#a32,#a42,#a52,#a62,#a72,#a82{
+    border-right: 6px solid black;
+}
+#a06,#a16,#a26,#a36,#a46,#a56,#a66,#a76,#a86{
+    border-left: 6px solid black;
+}
+#a20,#a21,#a22,#a23,#a24,#a25,#a26,#a27,#a28{
+    border-bottom: 6px solid black;
+}
+#a60,#a61,#a62,#a63,#a64,#a65,#a66,#a67,#a68{
+    border-top: 6px solid black;
 }
 input{
     border: 0px solid rgba(255, 255, 255, 0);
@@ -19,7 +58,7 @@ input{
     width: 20px;
     height: 20px;
     transition: 0.5s ease all;
-    
+    border-radius: 5px;
 }
 input:disabled{
     color: red;
@@ -33,23 +72,5 @@ input:focus{
 input:hover{
     transform: scale(1.3,1.3);
     cursor: pointer;
-}
-td:hover{
-    background-color: rgb(255, 255, 255);
-    color: white;
-    transform: scale(1.3,1.3);
-}
-
-.fondo{
-
-    width: 560px;
-    height: 560px;
-    background-image: url("fondo.png");
-    background-size: cover;
-
-}
-.centrar{
-    padding-top: 150px;
-    display: flex;
-    justify-content: center;
+    border:  1px solid rgba(0, 0, 0, 0) !important;
 }
