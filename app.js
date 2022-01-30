@@ -200,6 +200,10 @@ carga();
 function carga() {
     for (let i = 0; i < fila0.length; i++) {
         fila0[i].addEventListener("focusout", () => {
+            if(fila0[i].value == ""){
+                fila0[i].value = "";
+                tablero[0][i] = "";
+            }
             if (fila0[i].value != 0) {
                 tablero[0][i] = parseInt(fila0[i].value);
                 var caja0 = llenarcaja(0, 0);
@@ -233,6 +237,10 @@ function carga() {
             }
         });
         fila1[i].addEventListener("focusout", () => {
+            if(fila1[i].value == ""){
+                fila1[i].value = "";
+                tablero[1][i] = "";
+            }
             if (fila1[i].value != 0) {
                 tablero[1][i] = parseInt(fila1[i].value);
                 if (getrow(tablero, 1, parseInt(fila1[i].value)) == false) {
@@ -265,6 +273,10 @@ function carga() {
             }
         });
         fila2[i].addEventListener("focusout", () => {
+            if(fila2[i].value == ""){
+                fila2[i].value = "";
+                tablero[2][i] = "";
+            }
             if (fila2[i].value != 0) {
                 tablero[2][i] = parseInt(fila2[i].value);
                 if (getrow(tablero, 2, parseInt(fila2[i].value)) == false) {
@@ -297,6 +309,10 @@ function carga() {
             }
         });
         fila3[i].addEventListener("focusout", () => {
+            if(fila3[i].value == ""){
+                fila3[i].value = "";
+                tablero[3][i] = "";
+            }
             if (fila3[i].value != 0) {
                 tablero[3][i] = parseInt(fila3[i].value);
                 if (getrow(tablero, 3, parseInt(fila3[i].value)) == false) {
@@ -329,6 +345,10 @@ function carga() {
             }
         });
         fila4[i].addEventListener("focusout", () => {
+            if(fila4[i].value == ""){
+                fila4[i].value = "";
+                tablero[4][i] = "";
+            }
             if (fila4[i].value != 0) {
                 tablero[4][i] = parseInt(fila4[i].value);
                 if (getrow(tablero, 4, parseInt(fila4[i].value)) == false) {
@@ -362,6 +382,10 @@ function carga() {
             }
         });
         fila5[i].addEventListener("focusout", () => {
+            if(fila5[i].value == ""){
+                fila5[i].value = "";
+                tablero[5][i] = "";
+            }
             if (fila5[i].value != 0) {
                 tablero[5][i] = parseInt(fila5[i].value);
                 if (getrow(tablero, 5, parseInt(fila5[i].value)) == false) {
@@ -397,6 +421,10 @@ function carga() {
             }
         });
         fila6[i].addEventListener("focusout", () => {
+            if(fila6[i].value == ""){
+                fila6[i].value = "";
+                tablero[6][i] = "";
+            }
             if (fila6[i].value != 0) {
                 tablero[6][i] = parseInt(fila6[i].value);
                 if (getrow(tablero, 6, parseInt(fila6[i].value)) == false) {
@@ -429,6 +457,10 @@ function carga() {
             }
         });
         fila7[i].addEventListener("focusout", () => {
+            if(fila7[i].value == ""){
+                fila7[i].value = "";
+                tablero[7][i] = "";
+            }
             if (fila7[i].value != 0) {
                 tablero[7][i] = parseInt(fila7[i].value);
                 if (getrow(tablero, 7, parseInt(fila7[i].value)) == false) {
@@ -461,6 +493,10 @@ function carga() {
             }
         });
         fila8[i].addEventListener("focusout", () => {
+            if(fila8[i].value == ""){
+                fila8[i].value = "";
+                tablero[8][i] = "";
+            }
             if (fila8[i].value != 0) {
                 tablero[8][i] = parseInt(fila8[i].value);
                 if (getrow(tablero, 8, parseInt(fila8[i].value)) == false) {
