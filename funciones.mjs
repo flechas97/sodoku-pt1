@@ -1,15 +1,19 @@
 function llenarcaja(row, col, caja = []) {
+    try{
     col *= 3;
     row *= 3;
     for (let i = row; i < row + 3; i++) {
         for (let x = col; x < col + 3; x++) {caja.push(tablero[i][x]);}
     }
     return caja;
+    }catch(exception){}
 }
 function cargarfilas(fila, row) {
+    try {
     for (let i = 0; i < fila.length; i++) {
         fila[i].value = tablero[row][i];
     }
+} catch (error) {}
 }
 function getcaja(array, caja, numero) {
     validarr = [];
@@ -28,7 +32,15 @@ function getcaja(array, caja, numero) {
     }
     //console.log(indices);
     if (indices.length > 1) {
-         alert(element+ " no es valido en la caja");
+         //alert(element+ " no es valido en la caja");
+         Swal.fire({
+            title: 'No es valido en la caja',
+            text: 'Debes cumplir las reglas del Sodoku',
+            icon: 'warning',
+            confirmButtonText: 'Okay :(',
+            timer: 3000,
+            timerProgressBar: true
+          })
         // console.log(element + " no es valido en la caja")
         return false;
     } else {
@@ -53,8 +65,16 @@ function getcol(array, col,numero) {
     }
     // console.log(indices);
     if (indices.length > 1) {
-         alert(element+ " no es valido en la columna");
-        console.log(element + " no es valido en la columna")
+        //  alert(element+ " no es valido en la columna");
+        // console.log(element + " no es valido en la columna")
+        Swal.fire({
+            title: 'No es valido en la Columna',
+            text: 'Debes cumplir las reglas del Sodoku',
+            icon: 'warning',
+            confirmButtonText: 'Okay :(',
+            timer: 3000,
+            timerProgressBar: true
+          })
         return false;
     } else {
         // alert(element+ " es valido en la columna");
@@ -78,8 +98,16 @@ function getrow(array,row,numero) {
     }
     // console.log(indices);
     if (indices.length > 1) {
-         alert(element+ " no es valido en la fila");
-        console.log(element + " no es valido en la fila")
+        //  alert(element+ " no es valido en la fila");
+        // console.log(element + " no es valido en la fila")
+        Swal.fire({
+            title: 'No es valido en la Fila',
+            text: 'Debes cumplir las reglas del Sodoku',
+            icon: 'warning',
+            confirmButtonText: 'Okay :(',
+            timer: 3000,
+            timerProgressBar: true
+          })
         return false;
     } else {
         // alert( element+ " es valido en la fila");
