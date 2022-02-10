@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inicio.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <ul class="logo">
+                    <li>Sodoku</li>
+                </ul>
+                <ul class="menu">
+                    <li><button class="btn-menu" id="madrid">Modo Madrid</button></li>
+                    <!-- <li><button class="btn-menu" id="sodo1">Sodoku 1</button></li>
+                    <li><button class="btn-menu" id="sodo2">Sodoku 2</button></li>
+                    <li><button class="btn-menu" id="sodo3">Sodoku 3</button></li> -->
+                    <!-- <li><button class="btn-menu darkmode">Dark</button></li> -->
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex">
+        <div class="contenedor" id="cont">
+            <form action="sudoku.html">
+            <h2 class="opc">Opciones Sudoku</h2>
+            <div class="flex">
+                <select name="" id="tam" class="tam">
+                    <option value="">Tamaño: 9x9</option>
+                    <option value="">Tamaño: MEGA</option>
+                </select>
+            </div>
+            <div class="flex">
+                <select name="" id="dif" class="dif">
+                    <option value="3">Nivel: Dificil</option>
+                    <option value="2">Nivel: Medio</option>
+                    <option value="1">Nivel: Facil</option>
+                </select>
+                
+            </div>
+            <div class="flex">
+            <button class="btn_aceptar" id="aceptar">Aceptar</button>
+        </div>
+        </form>
+        </div>
+    </div>
+<script src="madrid.js"></script>
+<script src="inicio.js"></script>
+</body>
+
+</html>

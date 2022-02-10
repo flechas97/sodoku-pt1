@@ -1,3 +1,16 @@
+difucultad = document.getElementById("difi");
+ini = document.querySelector("#ini");
+ini.addEventListener("click", ()=>{
+    location.href = "opciones.html";
+})
+if (localStorage.getItem("tablero") == 1) {
+    difucultad.innerHTML = "Dificultad: Facil";
+}else if(localStorage.getItem("tablero") == 2){
+    difucultad.innerHTML = "Difucultad: Media";
+}else{
+    difucultad.innerHTML = "Difucultad: Dificil";
+}
+
 if (!localStorage.getItem("tablero")||localStorage.getItem("tablero") == 0) {
     var tablero = [
         ["", 6, "", 1, "", 4, "", 5, ""],
