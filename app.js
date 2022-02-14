@@ -3,7 +3,9 @@ ini = document.querySelector("#ini");
 ini.addEventListener("click", ()=>{
     location.href = "opciones.html";
 })
-if (localStorage.getItem("tablero") == 1) {
+if(localStorage.getItem("tablero") == 0){
+    difucultad.innerHTML = "Dificultad: Tutorial";
+}else if (localStorage.getItem("tablero") == 1) {
     difucultad.innerHTML = "Dificultad: Facil";
 }else if(localStorage.getItem("tablero") == 2){
     difucultad.innerHTML = "Difucultad: Media";

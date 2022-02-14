@@ -1,11 +1,20 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="iniciar.css">
     <link rel="stylesheet" href="inicio.css">
 
     <title>Document</title>
@@ -31,31 +40,28 @@
 
     <div class="flex">
         <div class="contenedor" id="cont">
-            <form action="sudoku.html">
-            <h2 class="opc">Opciones Sudoku</h2>
+            <!-- <form action="opciones.html"> -->
+            <h2 class="opc">Iniciar Sesion</h2>
             <div class="flex">
-                <select name="" id="tam" class="tam">
-                    <option value="">Tamaño: 9x9</option>
-                    <option value="">Tamaño: MEGA</option>
-                </select>
+                <input type="text" id="user" placeholder="Usuario">
             </div>
             <div class="flex">
-                <select name="" id="dif" class="dif">
-                    <option value="3">Nivel: Dificil</option>
-                    <option value="2">Nivel: Medio</option>
-                    <option value="1">Nivel: Facil</option>
-                    <option value="0">Nivel: Tutorial</option>
-                </select>
+                <input type="text" id="pass" placeholder="Contraseña">
                 
             </div>
             <div class="flex">
-            <button class="btn_aceptar" id="aceptar">Aceptar</button>
+            <button class="btn_aceptar" id="aceptar">Iniciar</button>
+            <button class="btn_aceptar" id="a">Crear Usuario WIP</button>
         </div>
-        </form>
+        <h5 id="valida"></h5>
+        <!-- </form> -->
         </div>
     </div>
+    <script src="login.js"></script>
 <script src="madrid.js"></script>
-<script src="inicio.js"></script>
+<!-- <script src="inicio.js"></script> -->
 </body>
 
+</html>
+</body>
 </html>
