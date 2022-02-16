@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inicio.css">
 
     <title>Document</title>
 </head>
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="header">
                 <ul class="logo">
-                    <li>Sodoku</li>
+                    <li>Sudoku</li>
                 </ul>
                 <ul class="menu">
                     <li><button class="btn-menu" id="madrid">Modo Madrid</button></li>
@@ -36,7 +36,7 @@
             <div class="flex">
                 <select name="" id="tam" class="tam">
                     <option value="">Tamaño: 9x9</option>
-                    <option value="">Tamaño: MEGA</option>
+                    <option value="">Tamaño: MEGA (No disponible)</option>
                 </select>
             </div>
             <div class="flex">
@@ -50,12 +50,29 @@
             </div>
             <div class="flex">
             <button class="btn_aceptar" id="aceptar">Aceptar</button>
+            <button class="btn_aceptar" id="aceptar"><a href="iniciar.html">Volver al login</a></button>
         </div>
+        
         </form>
+        <h2 class="opc">Ultimas Puntuaciones</h2>
+        <ul>
+            <li class="puntuaciones"></li>
+            <li class="puntuaciones"></li>
+            <li class="puntuaciones"></li>
+            <li class="puntuaciones"></li>
+            <li class="puntuaciones"></li>
+            <li class="puntuaciones"></li>
+            <li class="puntuaciones"></li>
+            <li class="puntuaciones"></li>
+            <li class="puntuaciones"></li>
+            <li class="puntuaciones"></li>
+            <li class="puntuaciones"></li>
+        </ul>
         </div>
     </div>
-<script src="madrid.js"></script>
-<script src="inicio.js"></script>
+<script src="js/madrid.js"></script>
+<script src="js/inicio.js"></script>
+<script src="js/punt.js"></script>
 </body>
 
 </html>

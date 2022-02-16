@@ -165,9 +165,26 @@ function validartodo() {
     for (let i = 0; i < 9; i++) {
         validcaja(i);
         for (let x = 1; x < 10; x++) {
-            getcol(tablero,i,x);
-            getrow(tablero,i,x);
+            if (getcol(tablero,i,x)==false) {
+                break;
+            }
+            //getcol(tablero,i,x);
+            if (getrow(tablero,i,x)==false) {
+                break;
+            }
+            //getrow(tablero,i,x);
         }
+    }
+}
+function correcto(){
+    for (let i = 0; i < tablero.length; i++) {
+       for (let k = 0; k < tablero.length; k++) {
+           if (tablero[i][k] == "") {
+               return false;
+           }else{
+               return true;
+           }
+       }
     }
 }
 function carga() {

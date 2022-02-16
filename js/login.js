@@ -5,17 +5,17 @@ async function validar (user,pass){
     return pais;
 }
 
-(async function (){
-    let pais = await validar(user,pass);
-    for (const key of pais) {
-        if(key.user == user && key.pass == pass){
-            console.log("es valido");
-        }
-        console.log(key.user);
-        // console.log(key);
-    }
+// (async function (){
+//     let pais = await validar(user,pass);
+//     for (const key of pais) {
+//         if(key.user == user && key.pass == pass){
+//             console.log("es valido");
+//         }
+//         console.log(key.user);
+//         // console.log(key);
+//     }
     
-})()
+// })()
 
 var user = "";
 var pass= "";
@@ -32,7 +32,13 @@ iniciar.addEventListener("click", () =>{
         for (const key of pais) {
             if(key.user == user && key.pass == pass){
                 // console.log("es valido");
+                if (!localStorage.getItem("user")) {
+                    localStorage.setItem("punt","");
+                }
+                
+                localStorage.setItem("user",user);
                 location.href = "opciones.html";
+
             }else{
                 val.innerHTML = "Usuario o Contraseña incorrecta";
             }

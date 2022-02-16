@@ -85,9 +85,11 @@ td:hover{
     background-color: rgb(59, 59, 59);
     color: whitesmoke !important;
 }
-#a00,#a01,#a02,#a03,#a04,#a05,#a06,#a07,#a08{
-    /* border-top: 3px solid black; */
-}
+
+/* #a00,#a01,#a02,#a03,#a04,#a05,#a06,#a07,#a08{
+     border-top: 3px solid black; 
+} */
+
 /* #a02,#a12,#a22,#a32,#a42,#a52,#a62,#a72,#a82{
     border-right: 6px solid black;
 }
@@ -138,6 +140,24 @@ input:hover{
     background-color: rgba(255, 255, 255, 0.384) !important;
     backdrop-filter: blur(3px) !important;
 }
+.botin{
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+#validar{
+    margin-left: 35%;
+}
+#time{
+    text-align: center;
+    color: red;
+}
+.puntuaciones{
+    list-style: none;
+    font-size: 24px;
+    margin-left: 32%;
+}
 @media (max-width: 1000px) {
     .logo{
         display: none;
@@ -145,5 +165,8 @@ input:hover{
     .header{
          width: 80%; 
         height: 65px;
+    }
+    #validar{
+        margin-left: 27%;
     }
 }
