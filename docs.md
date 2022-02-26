@@ -17,3 +17,8 @@ por lo tanto no podra modificar ningun numero
     1. Validar: este boton validara que estan todas las casillas con un numero; si el sudoku es valido se añadira a la tabla de puntuaciones la puntuacion que hayas conseguido.
     2. Solucionar: este boton te dara la solucion mas eficiente, si lo activas se dara por perdida la partida
     3. Reiniciar: Su propio nombre lo indica hace que se reinicie el sudoku
+
+
+### repositorio
+
+https://github.com/flechas97/sodoku-pt1

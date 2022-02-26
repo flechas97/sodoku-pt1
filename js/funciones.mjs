@@ -194,6 +194,12 @@ function carga() {
                 fila0[i].value = "";
                 tablero[0][i] = "";
             }
+            var r = /[a-z]|[A-Z]/;
+            if(r.test(fila0[i].value)){
+                console.log("es una letra")
+                fila0[i].value = "";
+                tablero[0][i] = "";
+            }
             if (fila0[i].value != 0) {
                 tablero[0][i] = parseInt(fila0[i].value);
                 var caja0 = llenarcaja(0, 0);
@@ -228,6 +234,12 @@ function carga() {
         });
         fila1[i].addEventListener("focusout", () => {
             if(fila1[i].value == ""){
+                fila1[i].value = "";
+                tablero[1][i] = "";
+            }
+            var r = /[a-z]|[A-Z]/;
+            if(r.test(fila1[i].value)){
+                console.log("es una letra")
                 fila1[i].value = "";
                 tablero[1][i] = "";
             }
@@ -267,6 +279,12 @@ function carga() {
                 fila2[i].value = "";
                 tablero[2][i] = "";
             }
+            var r = /[a-z]|[A-Z]/;
+            if(r.test(fila2[i].value)){
+                console.log("es una letra")
+                fila2[i].value = "";
+                tablero[2][i] = "";
+            }
             if (fila2[i].value != 0) {
                 tablero[2][i] = parseInt(fila2[i].value);
                 if (getrow(tablero, 2, parseInt(fila2[i].value)) == false) {
@@ -300,6 +318,12 @@ function carga() {
         });
         fila3[i].addEventListener("focusout", () => {
             if(fila3[i].value == ""){
+                fila3[i].value = "";
+                tablero[3][i] = "";
+            }
+            var r = /[a-z]|[A-Z]/;
+            if(r.test(fila3[i].value)){
+                console.log("es una letra")
                 fila3[i].value = "";
                 tablero[3][i] = "";
             }
@@ -339,6 +363,12 @@ function carga() {
                 fila4[i].value = "";
                 tablero[4][i] = "";
             }
+            var r = /[a-z]|[A-Z]/;
+            if(r.test(fila4[i].value)){
+                console.log("es una letra")
+                fila4[i].value = "";
+                tablero[4][i] = "";
+            }
             if (fila4[i].value != 0) {
                 tablero[4][i] = parseInt(fila4[i].value);
                 if (getrow(tablero, 4, parseInt(fila4[i].value)) == false) {
@@ -373,6 +403,12 @@ function carga() {
         });
         fila5[i].addEventListener("focusout", () => {
             if(fila5[i].value == ""){
+                fila5[i].value = "";
+                tablero[5][i] = "";
+            }
+            var r = /[a-z]|[A-Z]/;
+            if(r.test(fila5[i].value)){
+                console.log("es una letra")
                 fila5[i].value = "";
                 tablero[5][i] = "";
             }
@@ -415,6 +451,12 @@ function carga() {
                 fila6[i].value = "";
                 tablero[6][i] = "";
             }
+            var r = /[a-z]|[A-Z]/;
+            if(r.test(fila6[i].value)){
+                console.log("es una letra")
+                fila6[i].value = "";
+                tablero[6][i] = "";
+            }
             if (fila6[i].value != 0) {
                 tablero[6][i] = parseInt(fila6[i].value);
                 if (getrow(tablero, 6, parseInt(fila6[i].value)) == false) {
@@ -451,6 +493,12 @@ function carga() {
                 fila7[i].value = "";
                 tablero[7][i] = "";
             }
+            var r = /[a-z]|[A-Z]/;
+            if(r.test(fila7[i].value)){
+                console.log("es una letra")
+                fila7[i].value = "";
+                tablero[7][i] = "";
+            }
             if (fila7[i].value != 0) {
                 tablero[7][i] = parseInt(fila7[i].value);
                 if (getrow(tablero, 7, parseInt(fila7[i].value)) == false) {
@@ -484,6 +532,12 @@ function carga() {
         });
         fila8[i].addEventListener("focusout", () => {
             if(fila8[i].value == ""){
+                fila8[i].value = "";
+                tablero[8][i] = "";
+            }
+            var r = /[a-z]|[A-Z]/;
+            if(r.test(fila8[i].value)){
+                console.log("es una letra")
                 fila8[i].value = "";
                 tablero[8][i] = "";
             }
